@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorlib Website</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Library/fontawesome-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="CSS/poppins.css">
+    <link rel="stylesheet" href="CSS/montserrat.css">
+    <link rel="stylesheet" href="CSS/animate.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation work start -->
+    <div class="wrapper">
+        <header>
+            <div class="navigation navigation-2 fixed-top w-100">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container p-0">
+                        <a class="navbar-brand" href="index.html"><img src="images/Home/logo-01.png" alt="...."></a>
+                        <ul class="navbar-nav features-nav-2">
+                            <li class="nav-item">
+                                <a class="nav-icon" onclick="openpopup()"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li class="nav-item count-nav">
+                                <a class="nav-icon" onclick="cartopenup()"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item count-nav">
+                                <a class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-sm-0 m-3 ml-md-0 ml-lg-5 m-lg-0 m-sm-3 m-md-3">
+                                <li class="nav-item">
+                                    <div class="home-nav"><a class="main-nav" href="index.html">Home</a><i
+                                            class="fa-solid fa-chevron-right arrow-home-nav"></i></div>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Homepage 1</a>
+                                        <a class="dropdown-item" href="#">Homepage 2</a>
+                                        <a class="dropdown-item" href="#">Homepage 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="shop.html">Shop</a>
+                                </li>
+                                <li class="nav-item feature-box">
+                                    <a class="main-nav" href="features.html">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav features-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-icon" onclick="openpopup()"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item count-nav">
+                                    <a class="nav-icon" onclick="cartopenup()"><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </li>
+                                <li class="nav-item count-nav">
+                                    <a class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Navigation work end -->
+
+        <!-- Popup Search start -->
+        <div class="popup">
+            <div class="popsearch"><i class="fa-solid fa-magnifying-glass"></i><input type="text" class="text- 
+                 search" placeholder="Search...">
+                <a href="#" class="close-btn" onclick="closepopup()"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </div>
+        <!-- Popup Search end -->
+
+        <!-- Cart popup work start -->
+        <div class="shopcart">
+            <!-- Cart work start -->
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tag-blog-link">
+                            <a href="index.html">Home</a><span><i class="fa-solid fa-chevron-right"></i></span>
+                            <p>Shoping Cart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="purchase-display-cart">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-level="Product"><img src="images/Features/item-cart-04.jpg" alt="...">
+                                        </td>
+                                        <td data-level="Price">$ 36.00</td>
+                                        <td data-level="Quantity">
+                                            <div class="input-box-sys">
+                                                <i class="fa-solid fa-minus inc-dec"></i><input type="number"
+                                                    value="1"><i class="fa-solid fa-plus inc-dec"></i>
+                                            </div>
+                                        </td>
+                                        <td data-level="Total"><span id="totalcost">$ 36.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-level="Product"><img src="images/Features/item-cart-05.jpg" alt="...">
+                                        </td>
+                                        <td data-level="Price">$ 16.00</td>
+                                        <td data-level="Quantity">
+                                            <div class="input-box-sys">
+                                                <i class="fa-solid fa-minus inc-dec"></i><input type="number"
+                                                    value="1"><i class="fa-solid fa-plus inc-dec"></i>
+                                            </div>
+                                        </td>
+                                        <td data-level="Total"><span id="totalcost">$ 16.00</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="cart-section-work">
+                            <h3>CART TOTALS</h3>
+                            <div class="main-cart-work">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 cart-value-price">
+                                        <h5>Subtotal:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-6 cart-value-price">
+                                        <h6>$79.65</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 cart-value-price">
+                                        <h5>Shipping:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 cart-value-price">
+                                        <div class="shipping-box-text">
+                                            <p>There are no shipping methods available. Please double check
+                                                your address, or contact
+                                                us if you need any help.</p>
+                                            <form action="#">
+                                                <p>CALCULATE SHIPPING</p>
+                                                <select>
+                                                    <option>Select a Country</option>
+                                                    <option>USA</option>
+                                                    <option>UK</option>
+                                                </select>
+                                                <input type="text" placeholder="State / Country">
+                                                <input type="text" placeholder="Postcode / Zip">
+                                                <button class="update-tool-btn">UPDATE TOTALS</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 cart-value-price">
+                                        <h5>Total:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 cart-value-price">
+                                        <h6 id="maincost">$79.65</h6>
+                                    </div>
+                                </div>
+                                <button class="check-out-btn">Proceed To Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart work end -->
+            <a href="#" class="close-btn close-btn-2" onclick="cartcloseup()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <!-- Cart popup work end -->
+
+
+        <!-- Banner work start -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div
+                    class="carousel-item home-banner active animate__animated animate__slow	5s animate__delay-1s animate__fadeIn">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 p-0">
+                                <div class="text-content">
+                                    <span class="animate__animated animate__fadeInDownBig animate__delay-1s">Women
+                                        Collection 2018</span>
+                                    <h3 class="animate__animated animate__fadeInUp animate__delay-2s">NEW SEASON</h3>
+                                    <a href="#"
+                                        class="shop-now-btn animate__animated animate__zoomIn animate__delay-3s">shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="carousel-item home-banner animate__animated animate__slow	5s animate__delay-1s animate__fadeIn">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 p-0">
+                                <div class="text-content">
+                                    <span class="animate__animated animate__rollIn animate__delay-1s">Men
+                                        New-Season</span>
+                                    <h3 class="animate__animated animate__lightSpeedInRight animate__delay-2s">Jackets &
+                                        Coats</h3>
+                                    <a href="#"
+                                        class="shop-now-btn animate__animated animate__fadeInUp animate__delay-3s">shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="carousel-item home-banner animate__animated animate__slow	5s animate__delay-1s animate__fadeIn">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 p-0">
+                                <div class="text-content">
+                                    <span class="animate__animated animate__rotateInDownLeft animate__delay-1s">Men
+                                        Collection 2018</span>
+                                    <h3 class="animate__animated animate__rotateInUpRight animate__delay-2s">New
+                                        arrivals</h3>
+                                    <a href="#"
+                                        class="shop-now-btn animate__animated animate__rotateIn animate__delay-3s">shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span aria-hidden="true"><i class="fa-solid fa-caret-left prev-icon-banner"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span aria-hidden="true"><i class="fa-solid fa-caret-right next-icon-banner"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Banner work end -->
+
+        <!-- Gender Dress Selection work start -->
+        <div class="container p-0 mt-5 mb-5 pt-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="gender-box">
+                        <img src="images/Home/banner-01.jpg" alt="">
+                        <div class="text-sec-gen">
+                            <a href="#">
+                                <h3>Women</h3>
+                                <p>Spring 2018</p>
+                            </a>
+                        </div>
+                        <a href="#" class="shop-now-gen">
+                            <p>Shop Now</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="gender-box">
+                        <img src="images/Home/banner-02.jpg" alt="">
+                        <div class="text-sec-gen">
+                            <a href="#">
+                                <h3>Men</h3>
+                                <p>Spring 2018</p>
+                            </a>
+                        </div>
+                        <a href="#" class="shop-now-gen">
+                            <p>Shop Now</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="gender-box">
+                        <img src="images/Home/banner-03.jpg" alt="">
+                        <div class="text-sec-gen">
+                            <a href="#">
+                                <h3>Accessories</h3>
+                                <p>Spring 2018</p>
+                            </a>
+                        </div>
+                        <a href="#" class="shop-now-gen">
+                            <p>Shop Now</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Gender Dress Selection work end -->
+
+        <!-- Product Over View work start -->
+        <div class="container  pt-5 px-3 mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <ul class="product-link">
+                        <li><button type="button" class="pro-link-sec active1">All Products</button></li>
+                        <li><button type="button" class="pro-link-sec">Women</button></li>
+                        <li><button type="button" class="pro-link-sec">Men</button></li>
+                        <li><button type="button" class="pro-link-sec">Bag</button></li>
+                        <li><button type="button" class="pro-link-sec">Shoes</button></li>
+                        <li><button type="button" class="pro-link-sec">Watches</button></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="filter-search-set">
+                        <div class="filter-icon"><i class="fa-solid fa-bars fas"></i>
+                            <p>Filter</p>
+                        </div>
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass mag"></i>
+                            <p>Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mini Search Box start -->
+            <div class="container p-0">
+                <div class="search-mini-box">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="text- 
+                 search" placeholder="Search...">
+                </div>
+            </div>
+            <!-- Mini Search Box End -->
+
+            <!-- Filter Box Work Start -->
+            <div class="container p-0">
+                <div class="filter-box-details">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text filter-head-name">
+                            <h4>Sort By</h4>
+                            <ul class="filter-sub">
+                                <li><a href="#">Default</a></li>
+                                <li><a href="#">Popularity</a></li>
+                                <li><a href="#">Average Rating</a></li>
+                                <li><a href="#" class="active2">Newness</a></li>
+                                <li><a href="#">Price: Low to High</a></li>
+                                <li><a href="#">Price: High to Low</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text filter-head-name">
+                            <h4>Price</h4>
+                            <ul class="filter-sub">
+                                <li><a href="#" class="active2">All</a></li>
+                                <li><a href="#">$0.00 - $50.00</a></li>
+                                <li><a href="#">$50.00 - $100.00</a></li>
+                                <li><a href="#">$100.00 - $150.00</a></li>
+                                <li><a href="#">$150.00 - $200.00</a></li>
+                                <li><a href="#">$200.00+</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text filter-head-name">
+                            <h4>Color</h4>
+                            <ul class="filter-sub">
+                                <li><i class="fa-solid fa-circle" style="color:#222;"></i><a href="#">Black</a></li>
+                                <li><i class="fa-solid fa-circle" style="color: #4272d7;"></i><a href="#"
+                                        class="active2">Blue</a></li>
+                                <li><i class="fa-solid fa-circle" style="color: #b3b3b3;"></i><a href="#">Grey</a>
+                                </li>
+                                <li><i class="fa-solid fa-circle" style="color: #00ad5f;"></i><a href="#">Green</a>
+                                </li>
+                                <li><i class="fa-solid fa-circle" style="color: #fa4251;"></i><a href="#">Red</a>
+                                </li>
+                                <li><i class="fa-solid fa-circle" style="color: #e1e1e1;"></i><a href="#">White</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text filter-head-name">
+                            <h4>Tags</h4>
+                            <ul class="filter-sub tags-edit-pro">
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Streetstyle</a></li>
+                                <li><a href="#">Crafts</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Filter Box Work End -->
+
+            <!-- Tabular content image work start -->
+            <!-- All Products -->
+            <div class="tabular-clothes-content active1 ">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-01.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Esprit Ruffle Shirt</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$16.64</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-02.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$35.31</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-03.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Only Check Trouser</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$25.50</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-04.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Classic Trench Coat</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$75.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-05.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Front Pocket Jumper</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$34.75</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-06.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Vintage Inspired Classic</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$93.20</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-07.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Shirt in Stretch Cotton</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$52.66</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-08.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Pieces Metallic Printed</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$18.96</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-09.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Converse All Star Hi Plimsolls</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$75.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-10.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Femme T-Shirt In Stripe</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$25.85</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-11.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$63.16</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-12.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$63.15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-13.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">T-Shirt with Sleeve</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$18.49</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-14.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Pretty Little Thing</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$54.79</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-15.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Mini Silver Mesh Watch</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$86.85</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-16.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Square Neck Back</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$29.64</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+            <!-- All Products -->
+
+            <!-- For Women  Only -->
+            <div class="tabular-clothes-content">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-01.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Esprit Ruffle Shirt</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$16.64</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-02.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$35.31</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInRightBig">
+                            <div class="product-img"><img src="images/Home/product-04.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Classic Trench Coat</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$75.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInRight animate__delay-0s">
+                            <div class="product-img"><img src="images/Home/product-05.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Front Pocket Jumper</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$34.75</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInLeft">
+                            <div class="product-img"><img src="images/Home/product-07.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Shirt in Stretch Cotton</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$52.66</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-08.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Pieces Metallic Printed</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$18.96</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-10.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Femme T-Shirt In Stripe</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$25.85</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInRight">
+                            <div class="product-img"><img src="images/Home/product-13.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">T-Shirt with Sleeve</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$18.49</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec">
+                            <div class="product-img"><img src="images/Home/product-14.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Pretty Little Thing</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$54.79</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInDown">
+                            <div class="product-img"><img src="images/Home/product-16.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Square Neck Back</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$29.64</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+
+            <!-- Men Product Only -->
+            <div class="tabular-clothes-content">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInLeft">
+                            <div class="product-img"><img src="images/Home/product-03.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Only Check Trouser</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$25.50</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec  animate__animated animate__fadeInUp">
+                            <div class="product-img"><img src="images/Home/product-11.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$63.16</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInRight">
+                            <div class="product-img"><img src="images/Home/product-12.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Herschel supply</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$63.15</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Men Product Only -->
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+
+            <!-- Bag product only -->
+            <div class="tabular-clothes-content">
+                <div class="row"></div>
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+            <!-- Bag product only -->
+
+            <!-- Shoes product only -->
+            <div class="tabular-clothes-content">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__zoomIn">
+                            <div class="product-img"><img src="images/Home/product-09.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Converse All Star Hi Plimsolls</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$75.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+            <!-- Shoes product only -->
+
+            <!-- Watches product only -->
+            <div class="tabular-clothes-content">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInLeft">
+                            <div class="product-img"><img src="images/Home/product-06.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Vintage Inspired Classic</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$93.20</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3">
+                        <div class="tab-sec animate__animated animate__fadeInRight">
+                            <div class="product-img"><img src="images/Home/product-15.jpg" alt="...">
+                                <div class="load-more-btn quick-view-btn"><a href="#">Quick View</a></div>
+                            </div>
+                            <div class="tab-sec-det">
+                                <a href="#">Mini Silver Mesh Watch</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>$86.85</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-btn"><a href="#">Load More</a></div>
+            </div>
+
+        </div>
+        <!-- Watches product only -->
+        <!-- Tabular content image work end -->
+
+        <!-- Product Over View work end -->
+
+        <!-- Footer work start -->
+
+        <section class="footer-banner container-fluid">
+            <div class="container p-0 pt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Categories</h4>
+                        <ul class="footer-sub-task">
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Watches</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Help</h4>
+                        <ul class="footer-sub-task">
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Get in Touch</h4>
+                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018
+                            or call us on (+1) 96 716 6879
+                        </p>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Newsletter</h4>
+                        <input type="email" placeholder="email@emaple.com">
+                        <a href="#" class="shop-now-btn subscribe-btn">Subscribe</a>
+
+                    </div>
+                </div>
+                <!-- Payment Gateway work start -->
+                <div class="payment-gateway">
+                    <div class="payment-img">
+                        <a href="index.html"><img src="images/Home/icon-pay-01.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-02.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-03.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-04.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-05.png" alt="..."></a>
+                    </div>
+                    <p>Copyright ©2023 All rights reserved | This template is made with <i
+                            class="fa-regular fa-heart"></i>
+                        by <a href="#">Colorlib</a></p>
+                </div>
+                <!-- Payment Gateway work end -->
+            </div>
+        </section>
+        <!-- Footer work end -->
+
+
+        <!-- Scroll to top -->
+        <div id="scroll-up-btn">
+            <a href="#"><i class="fa-solid fa-angle-up scroll-up-angle-btn"></i></a>
+        </div>
+    </div>
+    <script src="JS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/main.js"></script>
+    </div>
+</body>
+
+</html>

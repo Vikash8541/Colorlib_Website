@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorlib Website</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Library/fontawesome-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="CSS/poppins.css">
+    <link rel="stylesheet" href="CSS/montserrat.css">
+    <link rel="stylesheet" href="CSS/animate.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation work start -->
+    <div class="wrapper">
+        <header>
+            <div class="navigation fixed-top w-100">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container p-0">
+                        <a class="navbar-brand" href="index.html"><img src="images/Home/logo-01.png" alt="...."></a>
+                        <ul class="navbar-nav features-nav-2">
+                            <li class="nav-item">
+                                <a class="nav-icon" onclick="openpopup()"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li class="nav-item count-nav">
+                                <a class="nav-icon" onclick="cartopenup()"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item count-nav">
+                                <a class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-sm-0 m-3 ml-md-0 ml-lg-5 m-lg-0 m-sm-3 m-md-3">
+                                <li class="nav-item ">
+                                    <div class="home-nav"><a class="main-nav" href="index.html">Home</a><i
+                                            class="fa-solid fa-chevron-right arrow-home-nav"></i></div>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Homepage 1</a>
+                                        <a class="dropdown-item" href="#">Homepage 2</a>
+                                        <a class="dropdown-item" href="#">Homepage 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="shop.html">Shop</a>
+                                </li>
+                                <li class="nav-item feature-box">
+                                    <a class="main-nav" href="features.html">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="main-nav" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav features-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-icon" onclick="openpopup()"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item count-nav">
+                                    <a class="nav-icon" onclick="cartopenup()"><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </li>
+                                <li class="nav-item count-nav">
+                                    <a class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Navigation work end -->
+
+        <!-- Features Banner extra Work Start -->
+        <div class="features-banner-task">
+            <div class="container-fluid p-0 sale-text-task">
+                <div class="row sale-text-img-main">
+                    <div class="sale-text">
+                        <img src="images/Features/Sale/s.png" alt="...">
+                        <img src="images/Features/Sale/a.png" alt="...">
+                    </div>
+                    <div class="sale-text">
+                        <img src="images/Features/Sale/l.png" alt="...">
+                        <img src="images/Features/Sale/e.png" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="container p-0">
+                <div class="features-main-box">
+                    <div class="row sale-discount-det">
+                        <div class="col-lg-6 col-md-6 col-sm-12 sale-features-det">
+                            <div class="sale-img-fea"><img src="images/Features/women.jpg" alt="....">
+                                <div class="shop-now-btn sale-shop-btn"><a href="#">Shop Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 sale-features-det">
+                            <div class="sale-img-fea"><img src="images/Features/men.jpg" alt="....">
+                                <div class="shop-now-btn sale-shop-btn"><a href="#">Shop Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row watches-sale-sec">
+                    <div class="col-12">
+                        <div class="sale-img-fea watch-img-pic"><img src="images/Features/watch-img.jpg" alt="....">
+                            <div class="shop-now-btn sale-shop-btn"><a href="#">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Features Banner extra Work End -->
+
+
+
+        <!-- Popup Search start -->
+        <div class="popup">
+            <div class="popsearch"><i class="fa-solid fa-magnifying-glass"></i><input type="text" class="text- 
+                 search" placeholder="Search...">
+                <a href="#" class="close-btn" onclick="closepopup()"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </div>
+        <!-- Popup Search end -->
+
+        <!-- Cart popup work start -->
+        <div class="shopcart">
+            <!-- Cart work start -->
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tag-blog-link">
+                            <a href="index.html">Home</a><span><i class="fa-solid fa-chevron-right"></i></span>
+                            <p>Shoping Cart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="purchase-display-cart">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-level="Product"><img src="images/Features/item-cart-04.jpg" alt="...">
+                                        </td>
+                                        <td data-level="Price">$ 36.00</td>
+                                        <td data-level="Quantity">
+                                            <div class="input-box-sys">
+                                                <i class="fa-solid fa-minus inc-dec"></i><input type="number"
+                                                    value="1"><i class="fa-solid fa-plus inc-dec"></i>
+                                            </div>
+                                        </td>
+                                        <td data-level="Total">$ 36.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-level="Product"><img src="images/Features/item-cart-05.jpg" alt="...">
+                                        </td>
+                                        <td data-level="Price">$ 16.00</td>
+                                        <td data-level="Quantity">
+                                            <div class="input-box-sys">
+                                                <i class="fa-solid fa-minus inc-dec"></i><input type="number"
+                                                    value="1"><i class="fa-solid fa-plus inc-dec"></i>
+                                            </div>
+                                        </td>
+                                        <td data-level="Total">$ 16.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="cart-section-work">
+                            <h3>CART TOTALS</h3>
+                            <div class="main-cart-work">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 cart-value-price">
+                                        <h5>Subtotal:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-6 cart-value-price">
+                                        <h6>$79.65</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 cart-value-price">
+                                        <h5>Shipping:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 cart-value-price">
+                                        <div class="shipping-box-text">
+                                            <p>There are no shipping methods available. Please double check
+                                                your address, or contact
+                                                us if you need any help.</p>
+                                            <form action="#">
+                                                <p>CALCULATE SHIPPING</p>
+                                                <select>
+                                                    <option>Select a Country</option>
+                                                    <option>USA</option>
+                                                    <option>UK</option>
+                                                </select>
+                                                <input type="text" placeholder="State / Country">
+                                                <input type="text" placeholder="Postcode / Zip">
+                                                <button class="update-tool-btn">UPDATE TOTALS</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 cart-value-price">
+                                        <h5>Total:</h5>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-12 cart-value-price">
+                                        <h6>$79.65</h6>
+                                    </div>
+                                </div>
+                                <button class="check-out-btn">Proceed To Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart work end -->
+            <a href="#" class="close-btn close-btn-2" onclick="cartcloseup()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <!-- Cart popup work end -->
+
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-text">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="testbox-sub">
+                            <div class="img-test-box">
+                                <img src="images/Features/testimonial-1.jpg" alt="...">
+                            </div>
+                            <div class="prof-test-det">
+                                <div class="circle-box"><i class="fa-solid fa-globe fa-flip"></i></div>
+                                <div class="test-name-prof">
+                                    <h4>Henry Brook</h4>
+                                    <p>Web Developement</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequuntur temporibus esse a perferendis dolor aspernatur quos distinctio atque provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, illo.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="testbox-sub">
+                            <div class="img-test-box">
+                                <img src="images/Features/testimonial-2.jpg" alt="...">
+                            </div>
+                            <div class="prof-test-det">
+                                <div class="circle-box"><i class="fa-solid fa-paint-roller fa-flip"></i></div>
+                                <div class="test-name-prof">
+                                    <h4>Lili Jenefir</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequuntur temporibus esse a perferendis dolor aspernatur quos distinctio atque provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, illo.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="testbox-sub">
+                            <div class="img-test-box">
+                                <img src="images/Features/testimonial-3.jpg" alt="...">
+                            </div>
+                            <div class="prof-test-det">
+                                <div class="circle-box"><i class="fa-solid fa-compass-drafting fa-flip"></i></div>
+                                <div class="test-name-prof">
+                                    <h4>Tom Phillips</h4>
+                                    <p>Web Designer</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequuntur temporibus esse a perferendis dolor aspernatur quos distinctio atque provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, illo.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="testbox-sub">
+                            <div class="img-test-box">
+                                <img src="images/Features/testimonial-4.jpg" alt="...">
+                            </div>
+                            <div class="prof-test-det">
+                                <div class="circle-box"><i class="fa-solid fa-palette fa-flip"></i></div>
+                                <div class="test-name-prof">
+                                    <h4>Richard Stephon</h4>
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequuntur temporibus esse a perferendis dolor aspernatur quos distinctio atque provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, illo.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev features-control" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span aria-hidden="true"><i class="fa-solid fa-caret-left prev-icon-banner"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next features-control" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span aria-hidden="true"><i class="fa-solid fa-caret-right next-icon-banner"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+
+        <!-- Footer work start -->
+
+        <section class="footer-banner container-fluid">
+            <div class="container p-0 pt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Categories</h4>
+                        <ul class="footer-sub-task">
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Watches</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Help</h4>
+                        <ul class="footer-sub-task">
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Get in Touch</h4>
+                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018
+                            or call us on (+1) 96 716 6879
+                        </p>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 footer-head-text">
+                        <h4>Newsletter</h4>
+                        <input type="email" placeholder="email@emaple.com">
+                        <a href="#" class="shop-now-btn subscribe-btn">Subscribe</a>
+
+                    </div>
+                </div>
+                <!-- Payment Gateway work start -->
+                <div class="payment-gateway">
+                    <div class="payment-img">
+                        <a href="index.html"><img src="images/Home/icon-pay-01.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-02.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-03.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-04.png" alt="..."></a>
+                        <a href="index.html"><img src="images/Home/icon-pay-05.png" alt="..."></a>
+                    </div>
+                    <p>Copyright ©2023 All rights reserved | This template is made with <i
+                            class="fa-regular fa-heart"></i>
+                        by <a href="#">Colorlib</a></p>
+                </div>
+                <!-- Payment Gateway work end -->
+            </div>
+        </section>
+        <!-- Footer work end -->
+
+
+        <!-- Scroll to top -->
+        <div id="scroll-up-btn">
+            <a href="#"><i class="fa-solid fa-angle-up scroll-up-angle-btn"></i></a>
+        </div>
+    </div>
+
+    <script src="JS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
