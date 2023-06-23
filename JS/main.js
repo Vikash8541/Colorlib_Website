@@ -1,3 +1,12 @@
+// Preloader
+
+let loader = document.getElementById("loader");
+
+function loaderfun(){
+    loader.style.display="none";
+}
+
+
 // BIG SEARCH POP UP AND POP OUT WORK
 
 let popup = document.querySelector(".popup");
