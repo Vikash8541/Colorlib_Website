@@ -59,6 +59,7 @@ img{
     transition: all 0.5s  ease-in-out;
     padding: 0.8rem;
 }
+
 .navbar-toggler-icon{
     width: auto;
     height: auto;
@@ -148,6 +149,10 @@ img{
     background-color: var(--hover-color);
 }
 @media (max-width:991.98px) {
+    .navbar-toggler{
+        padding: 0;
+        padding-left: 10px;
+    }
     .collapse{
         position: fixed;
         top: 80px;
@@ -173,7 +178,7 @@ img{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 25px;
+        gap: 8px;
         justify-content: space-between;
     }
     .features-nav-2 li >a{
